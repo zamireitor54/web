@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alquiler de Carros</title>
+  <link rel="stylesheet" href="carros.css">
+</head>
+
+<header class="header-outer">
+  <div class="header-inner">
+      <nav class="header-navigation">
+          <a href="index.html">Inicio</a>
+          <a href="carros.html">Alquiler carros</a>
+          <a href="nomina/nomina.html">Nómina</a>
+          <a href="perros/perros.html">Perritos</a>
+          <button>Menú</button>
+      </nav>
+  </div>
+</header>
+
+
+<body>
+  <div class="main-container">
+    <section class="form-section">
+      <form class="form" id="rental-form">
+        <h2>DATOS DE ALQUILER</h2>
+        <p type="Nombre del Cliente:">
+          <input type="text" id="client-name" placeholder="Escribe tu nombre" required>
+        </p>
+        <p type="Modelo del Carro:">
+          <select id="car-model" required>
+            <option value="">Selecciona un modelo</option>
+            <option value="BMW">BMW</option>
+            <option value="Megane">Megane</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Twingo">Twingo</option>
+            <option value="Chevrolet">Chevrolet</option>
+          </select>
+        </p>
+        <p type="Días de Alquiler:">
+          <input type="number" id="rental-days" placeholder="Número de días" min="1" required>
+        </p>
+        <p type="¿Seguro a Todo Riesgo?:">
+          <select id="insurance" required>
+            <option value="no">No</option>
+            <option value="yes">Sí</option>
+          </select>
+        </p>
+        <button type="button" id="calculate-button">Calcular Precio</button>
+      </form>
+    </section>
+
+    <section class="slider-section">
+        <h2 class="selected-car-title" id="selected-car-title">Seleccione un vehículo</h2>
+    <div class="slider-container">
+      <ul class="slides">
+        <li id="slide2"></li>
+        <li id="slide3"></li>
+        <li id="slide4"></li>
+        <li id="slide5"></li>
+      </ul>
+      <ul class="thumbnails">
+      
+    </div>
+</section>
+
+    <section class="result-section">
+      <form class="form" id="result-form">
+        <h2>RESULTADOS</h2>
+        <p type="Nombre del Cliente:">
+          <input type="text" id="result-client-name" value="---" disabled>
+        </p>
+        <p type="Modelo del Carro:">
+          <input type="text" id="result-car-model" value="---" disabled>
+        </p>
+        <p type="Días de Alquiler:">
+          <input type="text" id="result-days" value="---" disabled>
+        </p>
+        <p type="Seguro:">
+          <input type="text" id="result-insurance" value="---" disabled>
+        </p>
+        <p type="Total a Pagar:">
+          <input type="text" id="result-price" value="---" disabled>
+        </p>
+    </form>
+    </section>
+</div>
+  <script src="carros.js"></script>
+
+  <div class="footer">&copy;</span><span> Desarrollador Zamir Pabon || Instructora Ing Nur Derly Carpeta Sánchez</span></div>
+  
+  
+</body>
+</html>
